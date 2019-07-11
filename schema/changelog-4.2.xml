@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd"
+        logicalFilePath="changelog-4.2-clean">
+
+    <changeSet author="author" id="changelog-4.2-clean-mysql">
+
+        <preConditions onFail="MARK_RAN">
+            <dbms type="mysql" />
+        </preConditions>
+
+        <addColumn tableName="tc_positions">
+            <column name="batteryLevel" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="odometer" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="tripOdometer" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="status" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="coolantTemp" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="rpm" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="obdSpeed" type="INT" />
+        </addColumn>
+
+
+        <addColumn tableName="tc_positions">
+            <column name="fuel" type="INT"  />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="throttle" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="fuelConsumption" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="sat" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="distance" type="DOUBLE" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="totalDistance" type="DOUBLE" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="motion" type="BOOLEAN" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="engineLoad" type="INT" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="ignition" type="BOOLEAN" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="alarm" type="VARCHAR(128)" />
+        </addColumn>
+
+        <addColumn tableName="tc_positions">
+            <column name="milDistance" type="INT" />
+        </addColumn>
+
+    </changeSet>
+
+</databaseChangeLog>
